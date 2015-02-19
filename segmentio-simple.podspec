@@ -11,6 +11,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '7.0'
   s.osx.deployment_target = '10.8'
 
+  s.requires_arc = true
   s.source_files = 'Pod/Classes/**/*'
   s.frameworks = 'Foundation'
   s.ios.frameworks = 'UIKit'
