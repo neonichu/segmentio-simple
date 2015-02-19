@@ -10,6 +10,14 @@
 This is a very minimal library for interacting with [Segment](http://segment.com), which is useful when you only want server-side
 integrations. In contrast to the official SDK, it also supports OS X.
 
+Just pass your write-token and start tracking events with custom properties like this:
+
+```objectivec
+[[[BBUSegmentTracker alloc] initWithToken:@"segmentio-token"] trackEvent:@"#yolo"
+                                                          withProperties:@{ @"yep": @23 }
+                                                       completionHandler:nil];
+```
+
 ## Installation
 
 segmentio-simple is available through [CocoaPods](http://cocoapods.org). To install
