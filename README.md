@@ -13,9 +13,9 @@ integrations. In contrast to the official SDK, it also supports OS X.
 Just pass your write-token and start tracking events with custom properties like this:
 
 ```objectivec
-[[[BBUSegmentTracker alloc] initWithToken:@"segmentio-token"] trackEvent:@"#yolo"
-                                                          withProperties:@{ @"yep": @23 }
-                                                       completionHandler:nil];
+[[[BBUSegmentTracker alloc] initWithToken:@"segmentio-token"]
+	trackEvent:@"#yolo" withProperties:@{ @"yep": @23 }
+	completionHandler:nil];
 ```
 
 ## Installation
