@@ -7,6 +7,7 @@ end
 target 'Tests', :exclusive => true do
   pod "segmentio-simple", :path => "../"
 
-  pod 'Specta'
+  pod 'CCLRequestReplay', :git => 'https://github.com/cocodelabs/CCLRequestReplay.git'
   pod 'Expecta'
+  pod 'Specta'
 end

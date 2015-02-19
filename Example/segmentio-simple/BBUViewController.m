@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Boris Bügling. All rights reserved.
 //
 
+#import <segmentio-simple/BBUSegmentTracker.h>
+
 #import "BBUViewController.h"
 
 @interface BBUViewController ()
@@ -17,13 +19,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [[[BBUSegmentTracker alloc] initWithToken:@"segmentio-token"] trackEvent:@"#yolo"
+                                                              withProperties:@{ @"yep": @23 }
+                                                           completionHandler:nil];
 }
 
 @end

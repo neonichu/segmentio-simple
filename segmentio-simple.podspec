@@ -1,38 +1,17 @@
-#
-# Be sure to run `pod lib lint segmentio-simple.podspec' to ensure this is a
-# valid spec and remove all comments before submitting the spec.
-#
-# Any lines starting with a # are optional, but encouraged
-#
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = "segmentio-simple"
   s.version          = "0.1.0"
-  s.summary          = "A short description of segmentio-simple."
-  s.description      = <<-DESC
-                       An optional longer description of segmentio-simple
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/segmentio-simple"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.summary          = "This is a very minimal library for interacting with Segment."
+  s.homepage         = "https://github.com/neonichu/segmentio-simple"
   s.license          = 'MIT'
-  s.author           = { "Boris Bügling" => "boris@icculus.org" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/segmentio-simple.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { "Boris Bügling" => "boris@buegling.com" }
+  s.source           = { :git => "https://github.com/neonichu/segmentio-simple.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/NeoNacho'
 
-  s.platform     = :ios, '7.0'
-  s.requires_arc = true
+  s.ios.deployment_target = '7.0'
+  s.osx.deployment_target = '10.8'
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'segmentio-simple' => ['Pod/Assets/*.png']
-  }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'Foundation'
+  s.ios.frameworks = 'UIKit'
 end
