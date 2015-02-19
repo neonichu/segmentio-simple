@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'segmentio-simple', :exclusive => true do
+  pod "segmentio-simple", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "segmentio-simple", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+end
