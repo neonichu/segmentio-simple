@@ -1,5 +1,6 @@
 # segmentio-simple
 
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 [![CI Status](http://img.shields.io/travis/neonichu/segmentio-simple.svg?style=flat)](https://travis-ci.org/neonichu/segmentio-simple)
 [![Version](https://img.shields.io/cocoapods/v/segmentio-simple.svg?style=flat)](http://cocoadocs.org/docsets/segmentio-simple)
 [![License](https://img.shields.io/cocoapods/l/segmentio-simple.svg?style=flat)](http://cocoadocs.org/docsets/segmentio-simple)
@@ -27,7 +28,7 @@ it, simply add the following line to your Podfile:
 
 ## Author
 
-Boris Bügling, boris@buegling.com
+Boris Bügling, boris@buegling.com
 
 ## License
 
